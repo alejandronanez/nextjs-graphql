@@ -1,10 +1,12 @@
-import { Greeting } from 'components/Greeting';
-import React from 'react';
+import React from "react";
 
-export default function Home() {
+function Home({ countries }) {
   return (
-    <>
-      <Greeting />
-    </>
+    <div>
+      <h1>Countries</h1>
+      <pre>{JSON.stringify(countries, null, 2)}</pre>
+    </div>
   );
 }
+
+export default Home;
